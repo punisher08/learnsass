@@ -1,23 +1,396 @@
 @use '../custom' as *;
 @use  '../components/mixin' as *;
+.svg-bg{
+    @include media-breakpoint-down(md){
+       display: none;
+      }
+}
+.navbar{
+  
+    @include media-breakpoint-down(md){
+        // background: #000000ad;
+       }
+}
 
 .intro-section{
-    @include gradient;
-    padding: 10rem 0 0 0;
-    width: 100%;
-    height: 100%;
-}
-.intros{
-    .video-box{
-        position: relative;
-        a{
-            position: absolute;
 
-        }
-        span{
-            font-size: 6rem;
-            color:$black;
-
-        }
+//   background-image: url("../images/ADMedical-Services-Home.jpg") ;
+// background: url(https://admsdev.com/devtest/wp-content/uploads/ADMedical-Services-Home.jpg) 50% 50%;
+background: url(../images/ADMedical-Services-Home.jpg) #1c5ca061;
+    background-size: cover;
+  min-height: 900px;
+  background-blend-mode: multiply;
+//  background-size: cover;
+background-repeat: no-repeat;
+.intro-text{
+    text-align: center;
+    @include absoluteCenter;
+    @include media-breakpoint-down(md){
+       margin: auto;
+       width: 100%;
+     }
+    h4{
+        color: #FFFFFF;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 500;
+        line-height: 1.2em;
+        font-size: 17px;
     }
+    h1{
+    color: #FFFFFF;
+    font-family: "Manrope", Sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1.2em;
+    @include media-breakpoint-down(md){
+        font-size: 40px;
+     }
+  
+    }
+    button{
+        margin: 5px;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 500;
+        line-height: 1.2em;
+        background-color: #1C5CA000;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color:  #fff;
+        border-radius: 0px 0px 0px 0px;
+        padding: 20px 40px 20px 40px;
+        i{
+            margin-left: 10px;
+        }
+       
+    }
+    .discover{
+        background-color: #1C5CA0;
+        border-color: #1C5CA0;
+    }
+
 }
+}
+
+    .svg-bg{
+        // position: absolute;
+        margin-top: -200px;
+     }
+
+     .first-section{
+         h4{
+            font-family: "Manrope", Sans-serif;
+            font-weight: 500;
+            line-height: 1.2em;
+            color: #1C5CA0;
+            
+         }
+         h1{
+            font-family: "Manrope", Sans-serif;
+            font-size: 46px;
+            font-weight: 600;
+            line-height: 1.2em;
+            padding-bottom: 40px;
+
+         }
+         .paragraphs{
+             font-size: 16px;
+             color:#6E6E6E;
+             font-family: "Manrope", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.7em;
+         }
+         .balckquote{
+            font-size: 20px;
+            font-weight: 700;
+            font-style: italic;
+            border-left: 5px solid;
+            border-color: #1c5ca0;
+            padding-left: 20px;
+            color: #6E6E6E;
+         }
+         button{
+            margin-top: 20px;
+            fill: #1C5CA0;
+            color: $white;
+            background-color:$primary;
+            border-radius: 0px 0px 0px 0px;
+            padding: 20px 40px 20px 40px
+         }
+         .container{
+             .img-below{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding: 20px 0px 0px 0px;
+                .pic1{
+                    padding-right: 20px;
+                }
+                .pic2{
+                    padding-left: 20px;
+                }
+             }
+         }
+     }
+     .second-section{
+        background-image: url("../images/ADMedical-Services-Home.jpg") ;
+        // height: 100vh;
+        .intro-text{
+            // @include absoluteCenter;
+            text-align: center;
+            color: $white;
+            padding-left: 10px;
+            padding-right: 10px;
+            h4{
+               
+                color: $white;
+                font-family: "Manrope", Sans-serif;
+                font-weight: 500;
+                line-height: 1.2em;
+                font-size: 17px;
+                
+            }
+            h1{
+                font-family: "Manrope", Sans-serif;
+                font-size: 46px;
+                font-weight: 600;
+                line-height: 1.2em
+            }
+            p{
+                font-size: 16px;
+                color:#fff;
+                font-family: "Manrope", Sans-serif;
+               font-size: 20px;
+               font-weight: 400;
+               line-height: 1.7em;
+            }
+        }
+     }
+     .section-three{
+         .container{
+             h3{
+                font-family: "Manrope", Sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.2em
+             }
+             p{
+                font-size: 16px;
+                color:#6E6E6E;
+                font-family: "Manrope", Sans-serif;
+               font-size: 16px;
+               font-weight: 400;
+               line-height: 1.7em;
+             }
+             .cta-info__list {
+                 li{
+                     list-style: none;
+                     font-size: 16px;
+                     color:#6E6E6E;
+                     font-family: "Manrope", Sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.7em;
+                 }
+                li::before{
+                    font-family: "Font Awesome 5 Free";
+                    content: "";
+                    font-weight: 600;
+                    margin-right: 0.5rem;
+                    font-size: 1.2rem;
+                    color: #1c5ca0;
+                 }
+             }
+         }
+     }
+     .second-four{
+        background-image: url("../images/ADMedical-Services-Home.jpg") ;
+        // height: 100vh;
+        .intro-text{
+            // @include absoluteCenter;
+            text-align: center;
+            color: $white;
+            padding-left: 150px;
+            padding-right: 150px;
+            @include media-breakpoint-down(md){
+               padding: 0px;
+            }
+            h4{
+               
+                color: $white;
+                font-family: "Manrope", Sans-serif;
+                font-weight: 500;
+                line-height: 1.2em;
+                font-size: 17px;
+                
+            }
+            h1{
+                font-family: "Manrope", Sans-serif;
+                font-size: 46px;
+                font-weight: 600;
+                line-height: 1.2em
+            }
+            p{
+                font-size: 16px;
+                color:#fff;
+                font-family: "Manrope", Sans-serif;
+               font-size: 20px;
+               font-weight: 400;
+               line-height: 1.7em;
+            }
+        }
+     }
+     .section-five{
+         .container{
+             .balckquote-2{
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 1.5em;
+                border-left: 7px solid;
+                border-color: #1c5ca0;
+                padding-left: 20px;
+                font-family: "Manrope", Sans-serif;
+             }
+             .paragraph{
+                font-size: 16px;
+                color:#6E6E6E;
+                font-family: "Manrope", Sans-serif;
+               font-size: 16px;
+               font-weight: 400;
+               line-height: 1.7em;
+             }
+          
+ 
+         }
+     }
+     .testimonial-text{
+        .carousel-item{
+            p{
+                font-style: italic;
+                line-height: 1.5;
+            }
+        
+         }
+
+     }
+     
+     .section-six{
+         .container{
+             h1{
+                font-family: "Manrope", Sans-serif;
+                font-size: 55px;
+                font-weight: 900;
+                line-height: 1.2em;
+             }
+             .location-addresses{
+                 .p-title{
+                     color: #1c5ca0;
+                     font-family: "Manrope", Sans-serif;
+                     font-weight: 500;
+                 }
+                 .locations{
+                     i{
+                        margin: 15px;
+                     }
+                   
+                 }
+                 .location::before{
+                    font-family: "Font Awesome 5 Free";
+                    // content: "\f3c5";
+                    font-weight: 600;
+                    margin-right: 0.5rem;
+                    font-size: 1.2rem;
+                    color: #1c5ca0;
+                 }
+             }
+         }
+     }
+     .form-contact {
+         input[type="text"]{
+             border-bottom: 1px solid black;
+             border-top:none;
+             border-left:none;
+             border-right:none;
+
+         }
+     }
+     .time-to-call{
+         input{
+             margin-right: 10px;
+         }
+         label{
+            margin-right: 10px;
+         }
+     }
+     .services-choice{
+         input{
+             margin-top: 10px;
+         }
+     }
+     .med-field{
+        font-size: 0.9rem;
+         input{
+             margin-top: 10px;
+             
+         }
+     }
+     .submit-btn{
+         button{
+            border: 1px solid #1C5CA0;
+            border-radius: 0;
+            width: 100%;
+            color: #ffffff;
+            background-color: #1C5CA0;
+            padding: 13px 0;
+            text-transform: uppercase;
+            font-weight: 600;
+         }
+     }
+     .footer{
+         .container{
+      
+         }
+     }
+     .paragraphs-footer,.quick-links{
+        font-size: 16px;
+        color:#6E6E6E;
+        font-family: "Manrope", Sans-serif;
+       font-size: 16px;
+       font-weight: 400;
+       line-height: 1.7em;
+    }
+  .discover-footer{
+    margin-top: 20px;
+    fill: #1C5CA0;
+    color: #fff;
+    background-color: #1C5CA0;
+    border-radius: 0px 0px 0px 0px;
+    padding: 20px 40px 20px 40px;
+  }
+  .quick-links{
+      h3,.p-title{
+          color:  #1C5CA0;
+          font-weight: 700;
+          font-size: 1rem;
+      }
+  }
+  .footer-bottom{
+      background-color:#222223;
+  }
+  .social-links{
+      p{
+          color: white;
+          font-family: "Manrope", Sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.7em;
+      }
+      text-align: center;
+     a{
+         i{
+            color: $white;
+            margin-top: 30px;
+            font-size: 1.5rem;
+            padding: 5px;
+         }
+     }
+  }

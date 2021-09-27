@@ -1,14 +1,26 @@
 @use '../custom' as *;
 @use '../components/mixin' as *;
-.menu{
-   @include gradient;
-    li{
-        padding: 0 0.7rem;
-        a{
-            color: $white !important;
-            padding: 0 0.7rem;
-            text-transform: capitalize;
-            font-weight: 600;   
+.nav-logo{
+    filter: brightness( 1000% ) contrast( 1000% ) saturate( 200% ) blur( 0px ) hue-rotate( 
+0deg );
+padding: 25px 0px 25px 0px;
+z-index: 999;
+.navbar-nav{
+    font-family: "Manrope", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2em;
+    .container{
+      
+        li{
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color:#fff;
         }
+
     }
+ 
+}
 }
